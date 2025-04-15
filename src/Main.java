@@ -1,4 +1,7 @@
 import com.exercicios3.carro.Car;
+import com.exercicios4.employee.Attendant;
+import com.exercicios4.employee.Employee;
+import com.exercicios4.employee.Manager;
 import com.exercicios4.ticket.FamilyTicket;
 import com.exercicios4.ticket.HalfEntry;
 import com.exercicios4.ticket.Ticket;
@@ -131,11 +134,10 @@ public class Main {
 //    }
 
     public static void main(String[] args){
-        Ticket ticket = new FamilyTicket(20, "Terror na cabana", true, 6);
+        Attendant attendant = new Attendant("Natan", "email", "123");
+        Manager employee = new Manager("teste", "email", "password");
 
-        System.out.println(String.format("Filme: %s | Preço: R$%.2f | %s",
-                ticket.getFilmName(),
-                ticket.getPrice(),
-                ticket.isSubtitled() ? "Legendado" : "Dublado"));
+        attendant.changeData("João", "teste");
+        employee.generateFinancialReport();
     }
 }
