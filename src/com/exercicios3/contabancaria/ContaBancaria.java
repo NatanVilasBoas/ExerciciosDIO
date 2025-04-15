@@ -1,4 +1,4 @@
-package com.exercicios.contabancaria;
+package com.exercicios3.contabancaria;
 
 public class ContaBancaria {
     private String nomeConta;

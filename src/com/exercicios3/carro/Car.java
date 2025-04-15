@@ -1,4 +1,4 @@
-package com.exercicios.carro;
+package com.exercicios3.carro;
 
 public class Car {
     private boolean isOn;
