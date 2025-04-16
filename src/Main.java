@@ -5,6 +5,9 @@ import com.exercicios4.employee.Manager;
 import com.exercicios4.ticket.FamilyTicket;
 import com.exercicios4.ticket.HalfEntry;
 import com.exercicios4.ticket.Ticket;
+import com.exercicios4.watch.AmericanWatch;
+import com.exercicios4.watch.BrazillianWatch;
+import com.exercicios4.watch.Watch;
 
 import java.util.Scanner;
 
@@ -134,10 +137,12 @@ public class Main {
 //    }
 
     public static void main(String[] args){
-        Attendant attendant = new Attendant("Natan", "email", "123");
-        Manager employee = new Manager("teste", "email", "password");
+        AmericanWatch watch = new AmericanWatch(12, 30, 20);
+        BrazillianWatch watch1 = new BrazillianWatch(20, 20, 15);
 
-        attendant.changeData("João", "teste");
-        employee.generateFinancialReport();
+        watch.syncWith(watch1);
+
+        System.out.println(watch.getTime());
+        System.out.println(watch1.getTime());
     }
 }
